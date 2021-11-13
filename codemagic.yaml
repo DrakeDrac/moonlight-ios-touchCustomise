@@ -4,6 +4,5 @@ workflows:
       - name: Build ipa for distribution
         script: xcode-project build-ipa \
                     --project"/moonlight-common/moonlight-common.xcodeproj" \
-                    --scheme "${XCODE_SCHEME?}"
     artifacts:
       - build/ios/ipa/*.ipa
